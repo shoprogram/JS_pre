@@ -19,4 +19,11 @@ document.addEventListener('DOMContentLoaded', function () {
         curr = curr.replace(/\s+/, '&nbsp;');
         return `${acc}<span class="char">${curr}</span>`;
     }, "");
+    class Animation {
+        constructor(el) {
+            this.el =  document.querySelector(el);
+            this.chars = this.el.innerHTML.trim().split("");
+            
+        }
+    }
 });
