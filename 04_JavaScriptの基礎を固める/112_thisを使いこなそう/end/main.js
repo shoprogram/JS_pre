@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 class TextAnimation {
     constructor(el) {
+        console.log(this);
         this.el = document.querySelector(el);
         this.chars = this.el.innerHTML.trim().split("");
         this.el.innerHTML = this._splitText();
