@@ -18,4 +18,5 @@ document.addEventListener('DOMContentLoaded', function () {
     };
     const io = new IntersectionObserver(cb, options);
     els.forEach(el => io.observe(el));
+    console.log(els);
 });
